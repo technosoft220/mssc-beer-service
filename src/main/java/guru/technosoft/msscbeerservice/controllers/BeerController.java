@@ -10,7 +10,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping(value = "/api/v1/beer")
 public class BeerController {
-
+//ddd
     @GetMapping("/{id}")
     public ResponseEntity<BeerDto> getBeerById(@PathVariable UUID id) {
         return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.OK);
